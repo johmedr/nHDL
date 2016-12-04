@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/yop/Programmation/VHDL/Projets/nHDL/wkdir/core_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="core_test" />
+            <top_module name="nmath" />
+            <top_module name="nproperties" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/core_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[0:254]</obj_property>
+      <obj_property name="ObjectShortName">a[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[0:254]</obj_property>
+      <obj_property name="ObjectShortName">b[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[0:254]</obj_property>
+      <obj_property name="ObjectShortName">d[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/c" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">c</obj_property>
+      <obj_property name="ObjectShortName">c</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/uut/m" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m[0:254]</obj_property>
+      <obj_property name="ObjectShortName">m[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/uut/j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">j[0:254]</obj_property>
+      <obj_property name="ObjectShortName">j[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/uut/p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p[0:254]</obj_property>
+      <obj_property name="ObjectShortName">p[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/core_test/uut/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[0:254]</obj_property>
+      <obj_property name="ObjectShortName">i[0:254]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
