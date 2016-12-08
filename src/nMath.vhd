@@ -15,6 +15,10 @@ package nMath is
 
 -- [Types definitions]
 
+    -- [Type]:int16 
+    -- 16 bits signed integer
+    subtype int16 is integer range -32768 to 32767;
+
     -- [Type]:u_vector (Unconstrained vector) 
     -- Unconstrained vector type contains integers, vector is considered respectively as 
     -- a single row or as a single column, as it is needed for a mathematic operation
@@ -61,23 +65,23 @@ package nMath is
     
     -- [Function]:"*" (dual) 
     -- Compute a scalar times vector product. 
-    function "*" (signal a : integer; signal b : vector) return vector;
+    function "*" (signal a : int16; signal b : vector) return vector;
     
     -- [Function]:"*" (dual) 
     -- Compute a scalar times vector product. 
-    function "*" (signal a : vector; signal b : integer) return vector;
+    function "*" (signal a : vector; signal b : int16) return vector;
     
     -- [Function]:"*" (dual) 
     -- Compute a scalar times matrix product. 
-    function "*" (signal a : integer; signal b : matrix) return matrix;
+    function "*" (signal a : int16; signal b : matrix) return matrix;
     
     -- [Function]:"*" (dual)
     -- Compute a scalar times matrix product. 
-    function "*" (signal a : matrix; signal b : integer) return matrix;
+    function "*" (signal a : matrix; signal b : int16) return matrix;
     
     -- [Function]:"*" 
-    -- Compute a * b (row * column -> integer) 
-    function "*" (signal a, b : vector) return integer; 
+    -- Compute a * b (row * column -> int16) 
+    function "*" (signal a, b : vector) return int16; 
     
     -- [Function]:"*"
     -- Compute a * b (column * raw -> matrix)
@@ -191,7 +195,7 @@ package body nMath is
     
     -- [Function]:"*"
     -- Compute a scalar times vector product. 
-    function "*" (signal a : integer; signal b : vector) return vector is
+    function "*" (signal a : int16; signal b : vector) return vector is
         variable v : vector := zeros; 
     begin 
         for i in b'range loop 
@@ -202,7 +206,7 @@ package body nMath is
     
     -- [Function]:"*"
     -- Compute a scalar times vector product. 
-    function "*" (signal a : vector; signal b : integer) return vector is
+    function "*" (signal a : vector; signal b : int16) return vector is
         variable v : vector := zeros; 
     begin 
         for i in a'range loop 
@@ -213,7 +217,7 @@ package body nMath is
     
     -- [Function]:"*"
     -- Compute a scalar times matrix product. 
-    function "*" (signal a : integer; signal b : matrix) return matrix is 
+    function "*" (signal a : int16; signal b : matrix) return matrix is 
         variable m : matrix := zeros; 
     begin 
         for i in b'range loop 
@@ -224,7 +228,7 @@ package body nMath is
     
     -- [Function]:"*"
     -- Compute a scalar times matrix product. 
-    function "*" (signal a : matrix; signal b : integer) return matrix is
+    function "*" (signal a : matrix; signal b : int16) return matrix is
         variable m : matrix := zeros; 
     begin 
         for i in a'range loop 
@@ -234,11 +238,11 @@ package body nMath is
     end "*";
     
     -- [Function]:"*" 
-    -- Compute a * b (row * column -> integer) 
-    function "*"(signal a, b : vector) return integer is 
+    -- Compute a * b (row * column -> int16) 
+    function "*"(signal a, b : vector) return int16 is 
     -- a is considered as a row vector
     -- b is considered as a column vector
-        variable c : integer := 0; 
+        variable c : int16 := 0; 
     begin 
         for i in a'range loop
 				c := a(i) * b(i) + c; 

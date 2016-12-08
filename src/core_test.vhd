@@ -27,7 +27,7 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use work.nMath.all; 
+use work.nMath.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
@@ -41,10 +41,7 @@ ARCHITECTURE behavior OF core_test IS
  
     COMPONENT Core
     PORT(
-         A : OUT  matrix;
-         B : OUT  matrix;
 			D : OUT matrix; 
-         C : OUT  integer;
          CLK : IN  std_logic
         );
     END COMPONENT;
@@ -54,21 +51,15 @@ ARCHITECTURE behavior OF core_test IS
    signal CLK : std_logic := '0';
 
  	--Outputs
-   signal A : matrix;
-   signal B : matrix;
 	signal D : matrix;
-   signal C : integer;
 
    -- Clock period definitions
-   constant CLK_period : time := 10 ns;
+   constant CLK_period : time := 10ns;
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: Core PORT MAP (
-          A => A,
-          B => B,
-          C => C,
 			 D => D, 
           CLK => CLK
         );

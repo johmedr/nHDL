@@ -12,7 +12,7 @@ use IEEE.STD_LOGIC_1164.all;
 
 package nProperties is
 	type dimension is array (1 downto 0) of integer; 
-	constant matrix_dimension : dimension := (255, 255); 
+	constant matrix_dimension : dimension := (2,2); 
 
 end nProperties;
 
